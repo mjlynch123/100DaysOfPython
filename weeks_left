@@ -1,0 +1,18 @@
+age = input("What is your current age?")
+
+age_of_death = 90
+
+weeks_alive = int(age) * 52
+weeks_alive_death = age_of_death * 52
+
+days_alive = int(age) * 365
+days_alive_death = age_of_death * 365
+
+months_alive = int(age) * 12
+months_alive_death = age_of_death * 12
+
+days_left = days_alive_death - days_alive
+months_left = months_alive_death - months_alive
+weeks_left = weeks_alive_death - weeks_alive
+
+print(f"You have {days_left} days, {weeks_left} weeks, and {months_left} months left.")
